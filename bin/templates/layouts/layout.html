@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">YOUMA SITE</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <th:block layout:fragment="metas"></th:block>
+    <th:block layout:fragment="styles"></th:block>
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/jquery.form.min.js"></script>
+    <th:block layout:fragment="scripts"></th:block>
+</head>
+<body>
+	<header>
+		<th:block layout:fragment="header"></th:block>
+	</header>
+	<section>
+		<th:block layout:fragment="content"></th:block>
+	</section>
+	<footer>
+		<th:block layout:fragment="footer"></th:block>
+	</footer>
+	<section>	
+		<th:block layout:fragment="body-scripts"></th:block>
+	</section>
+</body>
+</html>
